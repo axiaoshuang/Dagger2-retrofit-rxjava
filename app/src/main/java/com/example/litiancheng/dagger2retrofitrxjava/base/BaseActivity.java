@@ -21,7 +21,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         setupActivityComponent();
         initData();
-
+//11231244124
 
     }
     public abstract int getView();
