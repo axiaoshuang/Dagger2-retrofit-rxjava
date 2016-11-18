@@ -1,7 +1,6 @@
 package com.example.litiancheng.dagger2retrofitrxjava.ui;
 
 import android.app.Dialog;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -9,20 +8,13 @@ import android.widget.TextView;
 
 import com.example.litiancheng.dagger2retrofitrxjava.R;
 import com.example.litiancheng.dagger2retrofitrxjava.base.BaseActivity;
-import com.example.litiancheng.dagger2retrofitrxjava.dagger.AppComponent;
 import com.example.litiancheng.dagger2retrofitrxjava.dagger.DaggerMainActivyComponet;
 import com.example.litiancheng.dagger2retrofitrxjava.dagger.MainActivityModule;
-import com.example.litiancheng.dagger2retrofitrxjava.net.ApiModule;
-import com.example.litiancheng.dagger2retrofitrxjava.net.ApiSevices;
 
 import javax.inject.Inject;
 
 import butterknife.Bind;
-import butterknife.ButterKnife;
-import retrofit2.Response;
-import rx.Observer;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.schedulers.Schedulers;
+
 
 /**
  * dagger框架+rxjava+retrofit组合使用
@@ -34,6 +26,7 @@ public class MainActivity extends BaseActivity implements MainContract.View {
     @Bind(R.id.main_tv)
     TextView mMainTv;
     private Dialog mDialog;
+
 
 
     @Override

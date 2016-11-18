@@ -1,6 +1,5 @@
 package com.example.litiancheng.dagger2retrofitrxjava.net;
 
-import android.app.Application;
 
 import dagger.Module;
 import dagger.Provides;
