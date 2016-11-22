@@ -20,20 +20,18 @@ public class BaseApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        app=this;
+        app = this;
         setupCompoent();
     }
 
-    public  static  BaseApplication getInstance(){
+    public static BaseApplication getInstance() {
         return app;
     }
 
     private void setupCompoent() {
-        mAppComponent=DaggerAppComponent.builder()
-                            .apiModule(new ApiModule())
-                                .build();
-
-
+        mAppComponent = DaggerAppComponent.builder()
+                .apiModule(new ApiModule())
+                .build();
     }
 
     public AppComponent getAppComponent() {
