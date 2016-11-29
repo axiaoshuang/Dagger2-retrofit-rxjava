@@ -39,7 +39,7 @@ public class MainPresenter extends BasePresenter implements  MainContract.Persen
                 .subscribe(new Observer<Response<String>>() {
                     @Override
                     public void onCompleted() {
-
+                        mView.hideDialog();
                     }
 
                     @Override
@@ -53,7 +53,6 @@ public class MainPresenter extends BasePresenter implements  MainContract.Persen
                     public void onNext(Response<String> stringResponse) {
 
                         mView.showContent(stringResponse.body());
-                        mView.hideDialog();
 
                     }
                 })

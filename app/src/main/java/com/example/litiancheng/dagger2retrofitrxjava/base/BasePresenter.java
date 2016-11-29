@@ -13,13 +13,15 @@ import javax.inject.Inject;
 public abstract class BasePresenter {
     @Inject
     protected ApiSevices mApiModule;
+
     public BasePresenter() {
         setupActivityComponent(BaseApplication.getInstance().getAppComponent());
     }
 
 
     protected void setupActivityComponent(AppComponent appComponent) {
-            appComponent.bind(this);
+        appComponent.bind(this);
     }
+
     public abstract void onDestroy();
 }

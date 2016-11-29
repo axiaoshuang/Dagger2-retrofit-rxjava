@@ -13,7 +13,7 @@ import butterknife.ButterKnife;
  */
 
 public abstract class BaseActivity extends AppCompatActivity {
-//develop
+    //develop
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,10 +24,12 @@ public abstract class BaseActivity extends AppCompatActivity {
 
 
     }
+
     public abstract int getView();
 
     public abstract void initData();
-    protected abstract void setupActivityComponent( );
+
+    protected abstract void setupActivityComponent();
 
 
     @Override
