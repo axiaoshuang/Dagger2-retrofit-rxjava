@@ -52,8 +52,9 @@ public class MainPresenter extends BasePresenter implements  MainContract.Persen
                     @Override
                     public void onNext(Response<String> stringResponse) {
 
-                        mView.hideDialog();
                         mView.showContent(stringResponse.body());
+                        mView.hideDialog();
+
                     }
                 })
 
